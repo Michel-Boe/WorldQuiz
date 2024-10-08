@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WorldByCapital</title>
+    <link rel="stylesheet" href="css/WorldByAnything.css">
+</head>
+<body>
+    <div class="header">
+        <div class="username">
+            <h1 id="username">Username</h1>
+        </div>
+        <div class="settings">
+            <h1> Settings</h1>
+            <label for="independent" class="toggle"></label>
+            <button class="independent"></button>
+            <label for="landlocked" class="toggle"></label>
+            <button class="landlocked"></button>
+            <div class="dropdownRegion">
+
+            </div>
+            
+        </div>
+        <div class="leaderboard">
+            <div class="switch-field">
+                <input type="radio" id="radio-three" name="switch-two" value="yes" checked/>
+                <label for="radio-three">Country</label>
+                <input type="radio" id="radio-four" name="switch-two" value="maybe" />
+                <label for="radio-four">Flag</label>
+                <input type="radio" id="radio-five" name="switch-two" value="no" />
+                <label for="radio-five">Capital</label>
+            </div>
+        
+            
+
+        </div>
+
+    </div>
+    
+    <div class="flexbox">
+        <div class="switch"></div>
+
+        <div class="byCountry">
+            <h1> World By Country</h1>
+            
+            <div class="rcwrapper">
+                <p>Random Country</p>
+                <p id="randomCountry"> Example Country</p>
+                <button class="StartQuiz" onclick="getRandomCountry()"> Start Quiz</button>
+            </div>
+            <br><br>    
+            <div class="capInputWrapper">
+                <input type="text" id="capitalGuess">
+                <p> Hauptstadt</p>
+                <button onclick="checkIfCorrect()"> Check</button>
+                <p id="check"></p>
+            </div>
+            <br>
+            <div class="flagInputWrapper">
+                <input type="image" src="/CountryQuiz/Media/placeholder_flag.png" alt="">
+                <input type="image" src="/CountryQuiz/Media/placeholder_flag.png" alt="">
+                <input type="image" src="/CountryQuiz/Media/placeholder_flag.png" alt="">
+                <input type="image" src="/CountryQuiz/Media/placeholder_flag.png" alt="">
+                <p> Flagge</p>
+                <button> Check</button>
+            </div>
+            <br><br>
+            <div class="borderInputWrapper">
+                <input type="text">
+                <p> Bordered Countries</p>
+                <button> Check</button>
+            </div>
+        
+
+            
+        </div>
+
+        <div class="byFlag" style="display: none"></div>
+
+        <div class="byCapital" style="display: none"></div>
+
+    </div>
+
+
+    <script src="js/cookieHandler.js"></script>
+    <script src="js/fetchData.js"></script>
+
+
+</body>
+</html>

@@ -1,0 +1,111 @@
+body{
+    background:#0d1f22;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow:hidden; 
+    gap: 20px;
+}
+
+.header, .flexbox{
+    background-color: #264027; 
+    border-radius: 30px;
+    border: solid;
+    border-color:  #6f732f;
+    height: max(90%, 500px);
+    flex-direction: column;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.header{
+    width: 300px;
+    gap: 5%;
+}
+
+.flexbox{
+    flex-grow: 0.97;
+}
+
+.username, .settings, .leaderboard{
+    display:flex;
+    align-items: center;
+    background-color: #b38a58;
+    border-radius:30px;
+    width: 80%;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.username{
+    height: 7%;
+}
+
+.settings{
+    height: 33%;
+    gap: 10px;
+}
+
+.leaderboard{
+    height: 40%;
+}
+
+.byFlag, .byCapital{
+    display:none;
+}
+
+.settings > .toggle{
+    height: 50px;
+    background-color: #0d1f22;
+    width: 50px;
+}
+
+.settings > h1{
+    margin:0;
+}
+
+
+.switch-field {
+	display: flex;
+    width: 80%;
+    justify-content: center;
+}
+
+.switch-field input {
+	position: absolute !important;
+	clip: rect(0, 0, 0, 0);
+	height: 1px;
+	width: 1px;
+	border: 0;
+}
+
+.switch-field label {
+	background-color: #0d1f22;
+	color: #ffffff;
+	font-size: 14px;
+	line-height: 1;
+	text-align: center;
+	padding: 8px 16px;
+	transition: all 0.1s ease-in-out;
+}
+
+.switch-field label:hover {
+	cursor: pointer;
+}
+
+.switch-field input:checked + label {
+	background-color: #264027;
+	box-shadow: none;
+}
+
+.switch-field label:first-of-type {
+	border-radius: 4px 0 0 4px;
+}
+
+.switch-field label:last-of-type {
+	border-radius: 0 4px 4px 0;
+}
